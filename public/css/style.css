@@ -1,0 +1,66 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #323330;
+}
+body .login,
+body .register {
+  background: #323330;
+  padding: 2rem;
+  width: 100vw;
+  height: fit-content;
+}
+body .login h1,
+body .register h1 {
+  text-align: center;
+  color: #323330;
+  margin-bottom: 4rem;
+}
+body .login .login-form,
+body .login .register-form,
+body .register .login-form,
+body .register .register-form {
+  background: #f4f4f4;
+  width: 40rem;
+  margin: auto;
+  padding: 4rem 6rem;
+  font-size: 18px;
+}
+body .login .login-form input,
+body .login .register-form input,
+body .register .login-form input,
+body .register .register-form input {
+  margin: 1rem 0rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+}
+body .login .login-form button,
+body .login .register-form button,
+body .register .login-form button,
+body .register .register-form button {
+  padding: 0.5rem 2rem;
+  margin: 1rem 0rem;
+  width: 100%;
+  border: none;
+  background: #323330;
+  color: #f4f4f4;
+  border-radius: 0.5rem;
+  font-size: 18px;
+}
+body .login .login-form button:hover,
+body .login .register-form button:hover,
+body .register .login-form button:hover,
+body .register .register-form button:hover {
+  background: green;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

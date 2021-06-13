@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('../includes/head.ejs')%>
+	<body>
+		<section class="login">
+			<form class="login-form">
+				<h1><%=title%></h1>
+				<label for="username">Username</label><br />
+				<input type="text" required id="username" /><br />
+				<label for="password">Password</label><br />
+				<input type="password" required id="password" /><br />
+				<button type="submit">Login</button><br />
+				<p>New here? <a href="register">Register</a></p>
+			</form>
+		</section>
+	</body>
+</html>

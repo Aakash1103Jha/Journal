@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('../includes/head.ejs')%>
+	<body>
+		<section class="register">
+			<form class="register-form" method="POST" action="/new-user">
+				<h1><%=title%></h1>
+
+				<label for="name">Name</label><br />
+				<input type="text" required id="name" /><br />
+
+				<label for="username">Username</label><br />
+				<input type="text" required id="username" /><br />
+
+				<label for="password">Password</label><br />
+				<input type="password" required id="password" /><br />
+
+				<label for="conf-password">Confirm Password</label><br />
+				<input type="password" required id="conf-password" /><br />
+
+				<button type="submit">Register</button><br />
+
+				<p>Already registered? <a href="login">Login</a></p>
+			</form>
+		</section>
+	</body>
+</html>
