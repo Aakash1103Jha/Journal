@@ -7,7 +7,7 @@
 
 body {
 	height: 100vh;
-	background: #323330;
+	background: #f4f4f4;
 
 	h1 {
 		text-align: center;
@@ -18,33 +18,38 @@ body {
 		background: #323330;
 		padding: 2rem;
 		width: 100vw;
-		height: fit-content;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		h1 {
 			text-align: center;
 			color: #323330;
-			margin-bottom: 4rem;
+			margin-bottom: 2rem;
 		}
 
 		.login-form,
 		.register-form {
-			background: #f4f4f4;
+			background: #f0db4f;
 			width: 40rem;
 			margin: auto;
-			padding: 4rem 6rem;
+			padding: 2rem 6rem;
 			font-size: 18px;
 
 			input {
 				margin: 1rem 0rem;
-				padding: 0.5rem;
+				padding: 1rem 0.5rem;
 				width: 100%;
 				border: none;
+				background: #ffffff;
 				border-radius: 0.5rem;
+				font-size: 16px;
 			}
 
 			button {
-				padding: 0.5rem 2rem;
-				margin: 1rem 0rem;
+				padding: 1rem 2rem;
+				margin: 2rem 0rem;
 				width: 100%;
 				border: none;
 				background: #323330;
@@ -54,8 +59,13 @@ body {
 			}
 
 			button:hover {
-				background: green;
+				color: #f0db4f;
+				font-weight: bold;
 				cursor: pointer;
+			}
+
+			p {
+				text-align: center;
 			}
 		}
 	}
@@ -74,30 +84,33 @@ body {
 			justify-content: center;
 		}
 		.left {
-			background: #80adbc;
+			background: #f0db4f;
 		}
 		.right {
-			background: #efdfd5;
+			background: #323330;
 		}
 		.left button,
 		.right button {
-			font-size: 20px;
+			font-size: 24px;
 			padding: 1rem;
 			width: 10rem;
 			border: none;
 			border-radius: 0.5rem;
 		}
 		.left button {
-			background: #efdfd5;
+			background: #323330;
+			color: #f0db4f;
 		}
 		.right button {
-			background: #80adbc;
+			background: #f0db4f;
+			color: #323330;
 		}
 		.left button:hover,
 		.right button:hover {
 			cursor: pointer;
 			transform: translateY(-0.3rem);
 			transition: 0.5s ease-in-out;
+			font-weight: bold;
 		}
 	}
 }
