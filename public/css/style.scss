@@ -59,4 +59,45 @@ body {
 			}
 		}
 	}
+
+	// landing-page.ejs
+	.landing-page {
+		display: flex;
+		width: 100vw;
+
+		.left,
+		.right {
+			height: 100vh;
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.left {
+			background: #80adbc;
+		}
+		.right {
+			background: #efdfd5;
+		}
+		.left button,
+		.right button {
+			font-size: 20px;
+			padding: 1rem;
+			width: 10rem;
+			border: none;
+			border-radius: 0.5rem;
+		}
+		.left button {
+			background: #efdfd5;
+		}
+		.right button {
+			background: #80adbc;
+		}
+		.left button:hover,
+		.right button:hover {
+			cursor: pointer;
+			transform: translateY(-0.3rem);
+			transition: 0.5s ease-in-out;
+		}
+	}
 }

@@ -65,5 +65,43 @@ body .register .register-form button:hover {
   background: green;
   cursor: pointer;
 }
+body .landing-page {
+  display: flex;
+  width: 100vw;
+}
+body .landing-page .left,
+body .landing-page .right {
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .landing-page .left {
+  background: #80adbc;
+}
+body .landing-page .right {
+  background: #efdfd5;
+}
+body .landing-page .left button,
+body .landing-page .right button {
+  font-size: 20px;
+  padding: 1rem;
+  width: 10rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+body .landing-page .left button {
+  background: #efdfd5;
+}
+body .landing-page .right button {
+  background: #80adbc;
+}
+body .landing-page .left button:hover,
+body .landing-page .right button:hover {
+  cursor: pointer;
+  transform: translateY(-0.3rem);
+  transition: 0.5s ease-in-out;
+}
 
 /*# sourceMappingURL=style.css.map */
