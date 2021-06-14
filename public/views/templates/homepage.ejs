@@ -2,6 +2,14 @@
 <html lang="en">
 	<%- include('../includes/head.ejs')%>
 	<body>
-		<h1>Journal App</h1>
+		<section class="journal-head">
+			<h1>Welcome</h1>
+		</section>
+		<section class="journal-content">
+			<% for (let i = 0; i < allEntries.length; i++) { %>
+			<div><%= allEntries[i]%></div>
+			<%}%>
+		</section>
+		<section class="add-content"></section>
 	</body>
 </html>

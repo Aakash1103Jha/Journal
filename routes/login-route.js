@@ -34,7 +34,8 @@ router.post('/login', async (req, res, next) => {
 	if (!error || user || validPassword) {
 		// create and assign JWT to user
 		const token = jwt.sign({ _id: user._id, email: user.email }, process.env.TOKEN_SECRET)
-		res.header('auth-token', token).render('homepage', { title: 'Homepage' })
+		res.header('auth-token', token).redirect('my-entries')
+		// render('homepage', { title: 'My Journal', user })
 	}
 	next()
 })

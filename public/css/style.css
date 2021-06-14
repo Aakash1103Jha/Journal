@@ -118,5 +118,12 @@ body .landing-page .right button:hover {
   transition: 0.5s ease-in-out;
   font-weight: bold;
 }
+body .journal-head {
+  background: skyblue;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */

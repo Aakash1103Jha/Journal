@@ -3,7 +3,7 @@ const Journal = require('../models/Journal-model')
 const verify = require('../auth/verifyToken')
 
 // find all entries
-router.get('/my-entries', verify, async (req, res) => {
+router.get('/my-entries', async (req, res) => {
 	try {
 		let allEntries = await Journal.find()
 		res.render('homepage', {

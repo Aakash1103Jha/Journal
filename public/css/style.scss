@@ -113,4 +113,13 @@ body {
 			font-weight: bold;
 		}
 	}
+
+	// homepage.ejs
+	.journal-head {
+		background: skyblue;
+		height: 6rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
