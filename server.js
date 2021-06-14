@@ -29,6 +29,10 @@ const LoginRoute = require('./routes/login-route')
 const RegisterRoute = require('./routes/register-route')
 
 // route middlewares
+app.get('/', async (req, res, next) => {
+	res.render('landing-page', { title: 'Journal.IO' })
+	next()
+})
 app.use('/', JournalRoute)
 app.use('/', LoginRoute)
 app.use('/', RegisterRoute)
