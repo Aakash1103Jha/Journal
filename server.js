@@ -25,8 +25,10 @@ app.set('views', path.join(__dirname, 'public', 'views', 'templates'))
 
 // route imports
 const JournalRoute = require('./routes/homepage-route')
-const LoginRoute = require('./routes/user-route')
+const LoginRoute = require('./routes/login-route')
+const RegisterRoute = require('./routes/register-route')
 
 // route middlewares
 app.use('/', JournalRoute)
 app.use('/', LoginRoute)
+app.use('/', RegisterRoute)
