@@ -7,7 +7,11 @@
 		</section>
 		<section class="journal-content">
 			<% for (let i = 0; i < allEntries.length; i++) { %>
-			<div><%= allEntries[i]%></div>
+			<div>
+				<h2><%= allEntries[i].title%></h2>
+				<p><%= allEntries[i].content%></p>
+				<p><%= allEntries[i].date%></p>
+			</div>
 			<%}%>
 		</section>
 		<section class="add-content"></section>
