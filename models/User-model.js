@@ -4,15 +4,16 @@ const Schema = mongoose.Schema
 const UserModel = new Schema({
 	name: {
 		type: String,
-		// required: true,
+		required: true,
 	},
-	username: {
+	email: {
 		type: String,
-		// required: true,
+		required: true,
 	},
 	password: {
 		type: String,
-		// required: true,
+		required: true,
+		min: 8,
 	},
 	date: {
 		type: Date,

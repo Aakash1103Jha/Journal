@@ -3,12 +3,12 @@
 	<%- include('../includes/head.ejs')%>
 	<body>
 		<section class="login">
-			<form class="login-form">
+			<form class="login-form" method="POST" action="/login">
 				<h1><%=title%></h1>
-				<label for="username">Username</label><br />
-				<input type="text" required id="username" /><br />
+				<label for="email">Email</label><br />
+				<input type="email" required name="email" /><br />
 				<label for="password">Password</label><br />
-				<input type="password" required id="password" /><br />
+				<input type="password" required name="password" /><br />
 				<button type="submit">Login</button><br />
 				<p>New here? <a href="register">Register</a></p>
 			</form>
