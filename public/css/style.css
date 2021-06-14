@@ -9,6 +9,9 @@ body {
   height: 100vh;
   background: #323330;
 }
+body h1 {
+  text-align: center;
+}
 body .login,
 body .register {
   background: #323330;
