@@ -17,7 +17,7 @@ router.get('/my-entries', verify, async (req, res) => {
 })
 
 // find one entry by _id
-router.get('/one-entry/:id', async (req, res) => {
+router.get('/one-entry/:id', verify, async (req, res) => {
 	try {
 		let oneEntry = await Journal.findById({ _id: req.params.id })
 		res.json(oneEntry)
@@ -27,7 +27,7 @@ router.get('/one-entry/:id', async (req, res) => {
 })
 
 // add new entry
-router.post('/new-entry', async (req, res) => {
+router.post('/new-entry', verify, async (req, res) => {
 	const entry = new Journal({
 		title: req.body.title,
 		content: req.body.content,
@@ -41,7 +41,7 @@ router.post('/new-entry', async (req, res) => {
 })
 
 // find entry by _id and modify entry content
-router.put('/modify-entry/:id', async (req, res) => {
+router.put('/modify-entry/:id', verify, async (req, res) => {
 	try {
 		await Journal.findByIdAndUpdate(
 			{ _id: req.params.id },

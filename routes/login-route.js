@@ -21,12 +21,15 @@ router.post('/login', async (req, res, next) => {
 	// check if email exists
 	let user = await User.findOne({ email: req.body.email })
 	if (!user) {
-		return res.status(400).send(`No user found with this email: ${req.body.email}`)
+		return res.status(400).render('error', {
+			title: 'Error',
+			error: `No user found with this email: ${req.body.email}`,
+		})
 	}
 	// check if password is correct
 	let validPassword = await bcrypt.compare(req.body.password, user.password)
 	if (!validPassword) {
-		return res.status(400).send('Incorrect password :(')
+		return res.status(400).render('error', { title: 'Error', error: 'Incorrect password' })
 	}
 	if (!error || user || validPassword) {
 		// create and assign JWT to user
